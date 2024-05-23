@@ -1,7 +1,6 @@
 // Plugins
 import Vue from '@vitejs/plugin-vue'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
-import Fonts from 'unplugin-fonts/vite'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -20,16 +19,6 @@ export default defineConfig({
       styles: {
         configFile: 'src/styles/vuetify/settings.scss'
       }
-    }),
-    Fonts({
-      google: {
-        families: [
-          {
-            name: 'Roboto Condensed',
-            styles: 'wght@100;300;400;500;700;900'
-          }
-        ]
-      }
     })
   ],
   define: { 'process.env': {} },
@@ -37,8 +26,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  server: {
-    port: 3000
   }
 })
