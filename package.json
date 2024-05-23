@@ -1,6 +1,6 @@
 {
   "name": "slon-base-page",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dmytro Balytskyi <dmytro.balytskyi@gmail.com>",
   "type": "module",
   "private": true,
@@ -11,7 +11,8 @@
     "test:unit": "vitest",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "patch": "yarn version --patch"
   },
   "dependencies": {
     "@fontsource-variable/roboto-condensed": "^5.0.3",
