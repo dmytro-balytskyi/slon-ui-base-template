@@ -1,5 +1,5 @@
 // Styles
-import '@fontsource-variable/roboto-condensed/wght-italic.css'
+import '@fontsource-variable/roboto-condensed'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 
