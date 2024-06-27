@@ -6,8 +6,8 @@ export function useAvailableHeight() {
   const layout = useLayout()
 
   const calculateAvailableHeight = () => {
-    const headerHeight = layout.main.getRect().top || 0
-    const footerHeight = layout.footer.getRect().height || 0
+    const headerHeight = layout.main?.getRect().top || 0
+    const footerHeight = layout.footer?.getRect().height || 0
     availableHeight.value = window.innerHeight - headerHeight - footerHeight
   }
 
