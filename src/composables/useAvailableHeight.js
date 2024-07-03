@@ -3,11 +3,12 @@ import { useLayout } from 'vuetify'
 
 export function useAvailableHeight() {
   const availableHeight = ref(0)
-  const layout = useLayout()
+  const { getLayoutItem } = useLayout()
 
   const calculateAvailableHeight = () => {
-    const headerHeight = layout.main?.getRect().top || 0
-    const footerHeight = layout.footer?.getRect().height || 0
+    const headerHeight = getLayoutItem('app-bar')?.size ?? 0
+    const footerHeight = getLayoutItem('footer')?.size ?? 0
+
     availableHeight.value = window.innerHeight - headerHeight - footerHeight
   }
 
