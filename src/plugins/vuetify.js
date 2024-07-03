@@ -1,13 +1,128 @@
 // Styles
-import '@fontsource-variable/roboto-condensed'
+import '@fontsource/roboto-condensed'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import '@/styles/vuetify/index.scss'
+import { VBtn } from 'vuetify/components/VBtn'
 
 // Composables
 import { createVuetify } from 'vuetify'
 
+const slonBluprint = {
+  aliases: {
+    VBtnIcon: VBtn
+  },
+  defaults: {
+    global: {
+      rounded: 'md'
+    },
+    VAvatar: {
+      rounded: 'circle'
+    },
+    VBanner: {
+      color: 'primary'
+    },
+    VBtn: {
+      color: 'primary'
+    },
+    VCard: {
+      rounded: 0
+    },
+    VCheckbox: {
+      color: 'secondary'
+    },
+    VSlider: {
+      color: 'primary'
+    },
+    VTabs: {
+      color: 'primary'
+    },
+    VAutocomplete: {
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      VIcon: {
+        size: 24
+      },
+      variant: 'underlined',
+      active: true
+    },
+    VCombobox: {
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      VIcon: {
+        size: 24
+      },
+      variant: 'underlined',
+      active: true
+    },
+    VSelect: {
+      VTextField: {
+        VLabel: {
+          class: 'text-uppercase'
+        },
+        VIcon: {
+          size: 24
+        }
+      },
+      variant: 'underlined',
+      active: true
+    },
+    VTextarea: {
+      VIcon: {
+        size: 24
+      },
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      variant: 'underlined',
+      clearIcon: 'mdi-close',
+      active: true
+    },
+    VTextField: {
+      VIcon: {
+        size: 24
+      },
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      variant: 'underlined',
+      clearIcon: 'mdi-close',
+      active: true
+    },
+    VFileInput: {
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      VIcon: {
+        size: 24
+      },
+      variant: 'underlined',
+      active: true
+    },
+
+    VToolbar: {
+      VBtn: {
+        color: null
+      }
+    },
+
+    VBtnIcon: {
+      class: 'slon-default-icon',
+      icon: 'icon',
+      rounded: 0
+    },
+    VIcon: {
+      class: 'slon-default-icon',
+      size: 48
+    }
+  }
+}
+
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
+  blueprint: slonBluprint,
   theme: {
     defaultTheme: 'light',
     themes: {
@@ -15,26 +130,26 @@ export default createVuetify({
         dark: false,
         colors: {
           primary: '#669cc1',
-          secondary: '#febb15',
+          secondary: '#ffa800',
           accent: '#fb8c00',
-          success: '#4caf50',
-          info: '#2196f3',
+          success: '#7cb342',
+          info: '#669cc1',
           warning: '#fb8c00',
-          error: '#b71c1c',
-          background: '#ffffff',
-          surface: '#ffffff'
+          error: '#ff6633',
+          selected: '#ff5592'
         }
       },
       dark: {
         dark: true,
         colors: {
           primary: '#669cc1',
-          secondary: '#febb15',
+          secondary: '#ffa800',
           accent: '#fb8c00',
-          success: '#4caf50',
-          info: '#2196f3',
+          success: '#7cb342',
+          info: '#669cc1',
           warning: '#fb8c00',
-          error: '#b71c1c'
+          error: '#ff6633',
+          selected: '#ff5592'
         }
       }
     }
