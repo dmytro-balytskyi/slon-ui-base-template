@@ -16,12 +16,12 @@ const toggle = ref(true)
     <v-app-bar>
       <v-app-bar-title>Demo App</v-app-bar-title>
       <template v-slot:append>
-        <v-btn-icon class="mr-2"icon="mdi-theme-light-dark" flat @click="toggleTheme" />
+        <v-btn-icon class="mr-2" icon="mdi-theme-light-dark" flat @click="toggleTheme" />
       </template>
     </v-app-bar>
     <h1>Home Page</h1>
 
-    <TestButton color="primary">Button</TestButton>  
+    <TestButton color="primary">Button</TestButton>
 
     <v-card class="mt-6" width="400">
       <v-card-title class="ma-0 pa-0">
@@ -46,7 +46,59 @@ const toggle = ref(true)
           <v-combobox label="Combobox"
             :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"></v-combobox>
           <v-text-field label="TextField" clearable></v-text-field>
-          <v-textarea label="Textarea" clearable></v-textarea>
+          <v-textarea label="Textarea"></v-textarea>
+
+          <v-chip closable>
+            Chip
+          </v-chip>
+          <v-chip closable>
+            Chip
+          </v-chip>
+          <v-chip closable>
+            And
+          </v-chip>
+          <v-chip closable>
+            Dale
+          </v-chip>
+
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            And
+          </v-chip>
+          <v-chip>
+            Dale
+          </v-chip>
+
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            And
+          </v-chip>
+          <v-chip>
+            Dale
+          </v-chip>
+
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            Chip
+          </v-chip>
+          <v-chip>
+            And
+          </v-chip>
+          <v-chip>
+            Dale
+          </v-chip>
         </v-card-text>
       </template>
     </v-card>

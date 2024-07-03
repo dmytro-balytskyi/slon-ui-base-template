@@ -1,3 +1,8 @@
+// Брендуємо v-chip, додаємо полоску зліва
+.v-chip {
+  border-left: 4px solid rgb(var(--v-theme-primary))!important;
+}
+
 // Конфігруація маски, виділяємо знайдений фрагмент
 .v-combobox__mask,
 .v-autocomplete__mask {

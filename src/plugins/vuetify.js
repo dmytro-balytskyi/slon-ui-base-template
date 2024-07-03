@@ -116,6 +116,12 @@ const slonBluprint = {
     VIcon: {
       class: 'slon-default-icon',
       size: 48
+    },
+    VChip: {
+      class: 'text-lowercase ma-1',
+      closeIcon: 'mdi-close',
+      label: true,
+      rounded: 0
     }
   }
 }
