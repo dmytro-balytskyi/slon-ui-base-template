@@ -1,29 +1,11 @@
 <script setup>
-import TestButton from '@/components/TestButton.vue'
 import { ref } from 'vue'
-import { useTheme } from 'vuetify'
-
-const theme = useTheme()
-function toggleTheme() {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-}
-
 const toggle = ref(true)
 </script>
 
 <template>
-  <div class="h-screen d-flex flex-column justify-center align-center">
-    <v-app-bar>
-      <v-app-bar-title>Demo App</v-app-bar-title>
-      <template v-slot:append>
-        <v-btn-icon class="mr-2" icon="mdi-theme-light-dark" flat @click="toggleTheme" />
-      </template>
-    </v-app-bar>
-    <h1>Home Page</h1>
-
-    <TestButton color="primary">Button</TestButton>
-
-    <v-card class="mt-6" width="400">
+  <v-container class="d-flex" fluid>
+    <v-card class="mx-4" width="400">
       <v-card-title class="ma-0 pa-0">
         <v-list-item>
           <template #prepend>
@@ -102,7 +84,7 @@ const toggle = ref(true)
         </v-card-text>
       </template>
     </v-card>
-  </div>
+  </v-container>
 </template>
 
 <style lang="scss"></style>
