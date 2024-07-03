@@ -1,6 +1,7 @@
 // Конфігруація маски, виділяємо знайдений фрагмент
-.v-combobox__mask, .v-autocomplete__mask {
-  background: rgb(var(--v-theme-selected))!important;
+.v-combobox__mask,
+.v-autocomplete__mask {
+  background: rgb(var(--v-theme-selected)) !important;
   color: #fff;
 }
 
@@ -15,5 +16,5 @@
 // Колір v-icon та v-btn однаковий по замовчуванню
 .slon-default-icon {
   color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)) !important;
-  opacity: unset!important;
+  opacity: unset !important;
 }
