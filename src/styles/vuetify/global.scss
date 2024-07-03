@@ -1,3 +1,9 @@
+// Конфігруація маски, виділяємо знайдений фрагмент
+.v-combobox__mask, .v-autocomplete__mask {
+  background: rgb(var(--v-theme-selected))!important;
+  color: #fff;
+}
+
 // Відступ в слотах v-list-item по замовчуванню
 .v-list-item__prepend,
 .v-list-item__append {
