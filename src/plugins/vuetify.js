@@ -101,6 +101,10 @@ const slonBluprint = {
       variant: 'underlined',
       active: true
     },
+    VList: {
+      class: "pa-0",
+      rounded: 0
+    },
 
     VToolbar: {
       VBtn: {
