@@ -1,0 +1,13 @@
+// Відступ в слотах v-list-item по замовчуванню
+.v-list-item__prepend,
+.v-list-item__append {
+  .v-list-item__spacer {
+    width: 8px !important;
+  }
+}
+
+// Колір v-icon та v-btn однаковий по замовчуванню
+.slon-default-icon {
+  color: rgba(var(--v-theme-on-surface), var(--v-medium-emphasis-opacity)) !important;
+  opacity: unset!important;
+}
