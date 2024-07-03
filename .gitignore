@@ -30,3 +30,7 @@ coverage
 *.tsbuildinfo
 
 *storybook.log
+
+# Firebase
+firebase*
+.firebase*
