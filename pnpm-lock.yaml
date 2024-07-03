@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@fontsource-variable/roboto-condensed':
-        specifier: ^5.0.3
-        version: 5.0.3
+      '@fontsource/roboto-condensed':
+        specifier: ^5.0.16
+        version: 5.0.16
       '@mdi/font':
         specifier: ^7.4.47
         version: 7.4.47
@@ -874,8 +874,8 @@ packages:
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
 
-  '@fontsource-variable/roboto-condensed@5.0.3':
-    resolution: {integrity: sha512-0GjOjaNXe+dv1pUqciPlTFZi1Z96nIz8RSRn4qn35cMROcdSnuYa2+BTngr1w0oX53HSVCxWL7AAYg7tD2Wfxw==}
+  '@fontsource/roboto-condensed@5.0.16':
+    resolution: {integrity: sha512-pjO80g5x/hkqzWCIafvkS3JrkBDxSiTjEy4LdqQKJYrmoGx8x2AlhSUMgzIzG/ge4kT98bA7+gmm7yquzrrZ/w==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -4008,6 +4008,9 @@ packages:
   vue-component-type-helpers@2.0.19:
     resolution: {integrity: sha512-cN3f1aTxxKo4lzNeQAkVopswuImUrb5Iurll9Gaw5cqpnbTAxtEMM1mgi6ou4X79OCyqYv1U1mzBHJkzmiK82w==}
 
+  vue-component-type-helpers@2.0.24:
+    resolution: {integrity: sha512-Jr5N8QVYEcbQuMN1LRgvg61758G8HTnzUlQsAFOxx6Y6X8kmhJ7C+jOvWsQruYxi3uHhhS6BghyRlyiwO99DBg==}
+
   vue-demi@0.14.7:
     resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
     engines: {node: '>=12'}
@@ -5051,7 +5054,7 @@ snapshots:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
 
-  '@fontsource-variable/roboto-condensed@5.0.3': {}
+  '@fontsource/roboto-condensed@5.0.16': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -5922,7 +5925,7 @@ snapshots:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.4.27(typescript@5.4.5)
-      vue-component-type-helpers: 2.0.19
+      vue-component-type-helpers: 2.0.24
     transitivePeerDependencies:
       - encoding
       - prettier
@@ -8711,6 +8714,8 @@ snapshots:
       typescript: 5.4.5
 
   vue-component-type-helpers@2.0.19: {}
+
+  vue-component-type-helpers@2.0.24: {}
 
   vue-demi@0.14.7(vue@3.4.27(typescript@5.4.5)):
     dependencies:
