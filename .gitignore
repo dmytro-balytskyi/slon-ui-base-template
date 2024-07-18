@@ -34,3 +34,6 @@ coverage
 # Firebase
 firebase*
 .firebase*
+
+# Env
+.env*
