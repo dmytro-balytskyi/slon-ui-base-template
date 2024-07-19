@@ -9,5 +9,8 @@
 
 Перелік готових методик для вирішення типових задач в рамках проекту
 
-[Link availableHeight](./recipes/availableHeight.md) — розрахунок доступної висоти компонента враховуючи apllication layout
+[availableHeight](./recipes/availableHeight.md) — розрахунок доступної висоти компонента враховуючи apllication layout
 
+[Module Federation](./recipes/moduleFederation.md) — нотатки про використання технології
+
+[errorBoundary компонент](./recipes//errorBoundary.md) — компонент для відлову помилок JavaScript та відображення резервних інтерфейсів 
