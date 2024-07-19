@@ -5,9 +5,10 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5200 --strictPort",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --port 5200 --strictPort",
+    "watch": "concurrently \"vite build --watch\" \"vite preview --port 5200 --strictPort\"",
     "test:unit": "vitest",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
@@ -34,11 +35,13 @@
     "@storybook/vue3-vite": "^8.1.2",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "^2.4.6",
+    "concurrently": "^8.2.2",
     "jsdom": "^24.0.0",
     "prettier": "^3.2.5",
     "sass": "^1.77.2",
     "storybook": "^8.1.2",
     "vite": "^5.2.11",
+    "vite-plugin-top-level-await": "^1.4.1",
     "vite-plugin-vuetify": "^2.0.3",
     "vitest": "^1.6.0"
   }
