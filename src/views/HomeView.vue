@@ -1,10 +1,15 @@
 <script setup>
+import SlonChip from '@/components/SlonChip.vue'
 import { ref } from 'vue'
 const toggle = ref(true)
 </script>
 
 <template>
   <v-container class="d-flex" fluid>
+    <v-btn color="primary" icon="mdi-cog" variant="plain" rounded="0"></v-btn>
+    <v-btn-icon color="primary" icon="mdi-cog" flat />
+    <v-btn color="primary" rounded="0">adsfasd</v-btn>
+
     <v-card class="mx-4" width="400">
       <v-card-title class="ma-0 pa-0">
         <v-list-item>
@@ -29,6 +34,8 @@ const toggle = ref(true)
             :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"></v-combobox>
           <v-text-field label="TextField" clearable></v-text-field>
           <v-textarea label="Textarea"></v-textarea>
+
+          <SlonChip>😍Test</SlonChip>
 
           <v-chip closable>
             Chip
