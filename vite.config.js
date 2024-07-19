@@ -24,7 +24,7 @@ export default defineConfig({
     }),
     federation({
       name: 'someshared',
-      filename: 're.js'
+      filename: 're.js',
       //shared: ['vue', 'vuetify']
     }),
     topLevelAwait({
