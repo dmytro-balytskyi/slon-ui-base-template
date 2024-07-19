@@ -8,7 +8,7 @@ import { VBtn } from 'vuetify/components/VBtn'
 // Composables
 import { createVuetify } from 'vuetify'
 
-const slonBluprint = {
+const slonBlueprint = {
   aliases: {
     VBtnIcon: VBtn
   },
@@ -132,7 +132,7 @@ const slonBluprint = {
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
-  blueprint: slonBluprint,
+  blueprint: slonBlueprint,
   theme: {
     defaultTheme: 'light',
     themes: {
