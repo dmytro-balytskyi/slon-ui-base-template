@@ -5,6 +5,7 @@ const config = {
     '@storybook/addon-essentials',
     //'@storybook/addon-interactions',
     '@storybook/addon-links',
+    'storybook-addon-vue-slots'
   ],
   framework: {
     name: '@storybook/vue3-vite',

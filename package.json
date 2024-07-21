@@ -39,6 +39,7 @@
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "storybook": "^8.2.4",
+    "storybook-addon-vue-slots": "^0.9.29",
     "vite": "^5.3.4",
     "vite-plugin-top-level-await": "^1.4.1",
     "vite-plugin-vuetify": "^2.0.3",
