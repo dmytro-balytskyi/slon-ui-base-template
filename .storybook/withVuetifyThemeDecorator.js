@@ -1,28 +1,25 @@
 import { useTheme } from 'vuetify'
-import VuetifyWrapper from './VuetifyWrapper.vue'
+import StoryWrapper from './StoryWrapper.vue'
 
 export const DEFAULT_THEME = 'light'
 
-export const withVuetifyTheme = (story, context) => {
+export const withVuetifyTheme = (story, context) => { 
   const globalTheme = context.globals.theme || DEFAULT_THEME
-
+  
   return {
-    components: { VuetifyWrapper, story },
+    components: { StoryWrapper, story },
     setup() {
       const theme = useTheme()
-
       theme.global.name.value = globalTheme
-
-      console.log(theme)
 
       return {
         theme: theme.global.name
       }
     },
     template: `
-      <VuetifyWrapper :theme="theme">
-          <story />
-      </VuetifyWrapper>
+      <StoryWrapper :theme="theme">
+        <story />
+      </StoryWrapper>
     `
   }
 }
