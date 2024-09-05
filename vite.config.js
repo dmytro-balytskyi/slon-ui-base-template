@@ -22,12 +22,12 @@ export default defineConfig({
         configFile: 'src/styles/vuetify/settings.scss'
       }
     }),
-    federation({
+    !process.env.STORYBOOKBUILD && federation({
       name: 'someshared',
       filename: 're.js',
       //shared: ['vue', 'vuetify']
     }),
-    topLevelAwait({
+    !process.env.STORYBOOKBUILD && topLevelAwait({
       promiseExportName: '__tla',
       promiseImportName: (i) => `__tla_${i}`
     })

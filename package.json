@@ -11,8 +11,8 @@
     "watch": "concurrently \"vite build --watch\" \"vite preview --port 5200 --strictPort\"",
     "test:unit": "vitest",
     "format": "prettier --write src/",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "cross-env STORYBOOKBUILD=true storybook dev -p 6006",
+    "build-storybook": "cross-env STORYBOOKBUILD=true storybook build",
     "patch": "yarn version --patch"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/test-utils": "^2.4.6",
     "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
     "jsdom": "^24.1.0",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
