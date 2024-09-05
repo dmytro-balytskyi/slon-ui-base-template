@@ -1,11 +1,31 @@
-/** @type { import('@storybook/vue3-vite').StorybookConfig } */
 const config = {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx|vue)'],
+  // refs: (config, { configType }) => {
+  //   if (configType === 'DEVELOPMENT') {
+  //     return {
+  //       'calls-history': {
+  //         title: 'Проект Calls History',
+  //         url: 'http://localhost:6007',
+  //         expanded: false
+  //       }
+  //     }
+  //   }
+
+  //   return {
+  //     'calls-history': {
+  //       title: 'Calls History',
+  //       url: 'https://dev.taxi-beton.ua/storybook/calls-history',
+  //       expanded: false
+  //     }
+  //   }
+  // },
   addons: [
     '@storybook/addon-essentials',
-    //'@storybook/addon-interactions',
+    '@storybook/addon-interactions',
     '@storybook/addon-links',
-    'storybook-addon-vue-slots'
+    '@storybook/addon-viewport',
+    'storybook-addon-vue-mdx',
+    'storybook-vue-addon',
   ],
   framework: {
     name: '@storybook/vue3-vite',
@@ -14,7 +34,7 @@ const config = {
     }
   },
   core: {
-    disableTelemetry: true // 👈 Disables telemetry
+    disableTelemetry: true
   },
   docs: {
     autodocs: 'tag'

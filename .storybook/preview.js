@@ -1,10 +1,15 @@
-import { setup } from '@storybook/vue3'
-import { registerPlugins } from '../src/plugins'
-import { withVuetifyTheme } from './withVuetifyThemeDecorator.js'
+import { withVuetify } from './withVuetify.js'
+import vuetify from '../src/plugins/vuetify.js'
+import { DEFAULT_VIEWPORT, MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
 
-setup((app) => {
-  registerPlugins(app)
-})
+MINIMAL_VIEWPORTS.responsive = {
+  name: 'Responsive',
+  styles: {
+    width: '100%',
+    height: '100%'
+  },
+  type: 'desktop'
+}
 
 const preview = {
   parameters: {
@@ -15,6 +20,12 @@ const preview = {
         color: /(background|color)$/i,
         date: /Date$/i
       }
+    },
+    viewport: {
+      viewports: {
+        ...MINIMAL_VIEWPORTS
+      },
+      defaultViewport: DEFAULT_VIEWPORT
     }
   },
   globalTypes: {
@@ -28,8 +39,15 @@ const preview = {
         dynamicTitle: true
       }
     }
-  }
+  },
+  globals: {
+    vueMdx: {
+      beforeVueAppMount(app) {
+        app.use(vuetify)
+      }
+    }
+  },
+  decorators: [withVuetify]
 }
 
 export default preview
-export const decorators = [withVuetifyTheme]
