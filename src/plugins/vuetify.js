@@ -3,10 +3,13 @@ import '@fontsource/roboto-condensed'
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import '@/styles/vuetify/index.scss'
-import { VBtn } from 'vuetify/components/VBtn'
 
 // Composables
 import { createVuetify } from 'vuetify'
+
+// Components
+import { VBtn } from 'vuetify/components/VBtn'
+import { ru, uk } from 'vuetify/locale'
 
 const slonBlueprint = {
   aliases: {
@@ -166,5 +169,9 @@ export default createVuetify({
   },
   display: {
     mobileBreakpoint: 'md',
+  },
+  locale: {
+    locale: 'uk',
+    messages: { ru, uk },
   },
 })
