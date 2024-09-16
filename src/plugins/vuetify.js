@@ -163,5 +163,8 @@ export default createVuetify({
         }
       }
     }
-  }
+  },
+  display: {
+    mobileBreakpoint: 'md',
+  },
 })
