@@ -25,9 +25,6 @@ const slonBlueprint = {
     VBanner: {
       color: 'primary'
     },
-    VBtn: {
-      color: 'primary'
-    },
     VCard: {
       rounded: 0
     },
@@ -39,6 +36,11 @@ const slonBlueprint = {
     },
     VTabs: {
       color: 'primary'
+    },
+    VTab: {
+      VIcon: {
+        size: 32
+      }
     },
     VAutocomplete: {
       VLabel: {
@@ -105,30 +107,72 @@ const slonBlueprint = {
       active: true
     },
     VList: {
-      class: "pa-0",
+      class: 'pa-0',
       rounded: 0
     },
-
     VToolbar: {
       VBtn: {
         color: null
       }
     },
-
-    VBtnIcon: {
-      class: 'slon-default-icon',
-      icon: 'icon',
-      rounded: 0
+    VTooltip: {
+      'open-delay': 3000
     },
-    VIcon: {
-      class: 'slon-default-icon',
-      size: 48
+    VBtnIcon: {
+      icon: 'icon',
+      rounded: 0,
+      VIcon: {
+        size: 48
+      }
     },
     VChip: {
       class: 'text-lowercase ma-1',
       closeIcon: 'mdi-close',
       label: true,
       rounded: 0
+    },
+    VRating: {
+      activeColor: 'secondary',
+      color: 'grey-darken-1',
+      density: 'comfortable',
+      VIcon: {
+        class: ''
+      }
+    },
+    VCheckbox: {
+      color: 'success',
+      density: 'comfortable',
+      hideDetails: true,
+      VIcon: {
+        class: ''
+      }
+    },
+    VSwitch: {
+      color: 'success',
+      density: 'comfortable',
+      hideDetails: true
+    },
+    VRadio: {
+      color: 'success',
+      density: 'comfortable',
+      hideDetails: true,
+      VIcon: {
+        class: ''
+      }
+    },
+    VRadioGroup: {
+      color: 'success',
+      density: 'comfortable',
+      hideDetails: true
+    },
+    VSnackbar: {
+      rounded: 0,
+      timeout: 4000
+    },
+    VFab: {
+      color: 'primary',
+      size: 'large',
+      appear: true
     }
   }
 }
