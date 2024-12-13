@@ -40,7 +40,7 @@ const preview = {
       }
     }
   },
-  globals: {
+  initialGlobals: {
     vueMdx: {
       beforeVueAppMount(app) {
         app.use(vuetify)
