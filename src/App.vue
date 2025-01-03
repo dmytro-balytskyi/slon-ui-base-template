@@ -11,6 +11,10 @@ function toggleTheme() {
   <v-app>
     <v-app-bar name="app-bar" app>
       <v-app-bar-title>Demo App</v-app-bar-title>
+
+      <!-- Teleport zone "slon-menu-toolbar" -->
+      <div id="slon-menu-toolbar"></div>
+      
       <template v-slot:append>
         <v-btn-icon class="mr-2" icon="mdi-theme-light-dark" flat @click="toggleTheme" />
       </template>
