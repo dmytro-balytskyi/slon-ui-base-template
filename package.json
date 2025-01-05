@@ -39,7 +39,7 @@
     "cross-env": "^7.0.3",
     "jsdom": "^25.0.0",
     "prettier": "^3.3.3",
-    "sass": "^1.78.0",
+    "sass-embedded": "^1.83.1",
     "storybook": "^8.2.9",
     "storybook-addon-vue-mdx": "^1.0.1",
     "storybook-vue-addon": "^0.6.1",
