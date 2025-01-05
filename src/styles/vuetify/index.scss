@@ -1,2 +1,2 @@
-@import './settings.scss';
-@import './global.scss';
+@use './settings.scss' as *;
+@use './global.scss' as *;
