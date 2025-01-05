@@ -22,15 +22,17 @@ export default defineConfig({
         configFile: 'src/styles/vuetify/settings.scss'
       }
     }),
-    !process.env.STORYBOOKBUILD && federation({
-      name: 'someshared',
-      filename: 're.js',
-      //shared: ['vue', 'vuetify']
-    }),
-    !process.env.STORYBOOKBUILD && topLevelAwait({
-      promiseExportName: '__tla',
-      promiseImportName: (i) => `__tla_${i}`
-    })
+    !process.env.STORYBOOKBUILD &&
+      federation({
+        name: 'someshared',
+        filename: 're.js'
+        //shared: ['vue', 'vuetify']
+      }),
+    !process.env.STORYBOOKBUILD &&
+      topLevelAwait({
+        promiseExportName: '__tla',
+        promiseImportName: (i) => `__tla_${i}`
+      })
   ],
   define: { 'process.env': {} },
   resolve: {
@@ -45,6 +47,13 @@ export default defineConfig({
     rollupOptions: {
       output: {
         minifyInternalExports: false
+      }
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler'
       }
     }
   }
