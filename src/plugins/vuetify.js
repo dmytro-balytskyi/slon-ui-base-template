@@ -13,11 +13,107 @@ import { ru, uk } from 'vuetify/locale'
 
 const slonBlueprint = {
   aliases: {
-    VBtnIcon: VBtn
+    VBtnIcon: VBtn,
+    SBtn: VBtn,
+    FBtn: VBtn
   },
   defaults: {
     global: {
       rounded: 'md'
+    },
+
+    VBtnIcon: {
+      icon: 'icon',
+      rounded: 0,
+      VIcon: {
+        size: 48
+      }
+    },
+
+    VBtn: {
+      rounded: 0
+    },
+
+    SBtn: {
+      class: 's-btn',
+      variant: 'text',
+      rounded: 0,
+      height: 48,
+      VIcon: {
+        size: 32
+      },
+      style: {
+        fontSize: '16px'
+      }
+    },
+    FBtn: {
+      class: 'f-btn',
+      variant: 'tonal',
+      rounded: 0,
+      height: 48,
+      VIcon: {
+        size: 32
+      },
+      style: {
+        fontSize: '16px'
+      }
+    },
+    VBtnToggle: {
+      rounded: 0,
+      color: 'success',
+      variant: 'text',
+      VIcon: {
+        size: 32
+      }
+    },
+    VBtnGroup: {
+      rounded: 0
+    },
+    VFab: {
+      color: 'primary',
+      size: 'large',
+      appear: true,
+      VIcon: {
+        size: 32
+      }
+    },
+    VSpeedDial: {
+      transition: 'slide-y-reverse-transition',
+      scrollStrategy: 'close',
+      VBtn: {
+        width: 56,
+        height: 56,
+        rounded: 'circle'
+      },
+      VIcon: {
+        size: 32
+      }
+    },
+    VRating: {
+      activeColor: 'secondary',
+      color: 'grey-darken-1',
+      density: 'comfortable',
+      clearable: true,
+      hover: true,
+      VIcon: {
+        class: ''
+      }
+    },
+    VChip: {
+      class: 'text-lowercase',
+      closeIcon: 'mdi-close',
+      label: true
+    },
+    VTab: {
+      VIcon: {
+        size: 32
+      },
+      variant: 'text'
+    },
+    VTabs: {
+      color: 'primary',
+      sliderColor: 'primary',
+      mobileBreakpoint: 'md'
     },
     VAvatar: {
       rounded: 'circle'
@@ -28,31 +124,74 @@ const slonBlueprint = {
     VCard: {
       rounded: 0
     },
-    VCheckbox: {
-      color: 'secondary'
+    VCardTitle: {
+      style: 'user-select: none;'
+    },
+    VToolbar: {
+      VBtn: {
+        color: null
+      }
+    },
+    VBottomNavigation: {
+      height: 60,
+      VIcon: {
+        size: 32
+      },
+      grow: true
     },
     VSlider: {
       color: 'primary'
     },
-    VTabs: {
-      color: 'primary'
+    VTooltip: {
+      openDelay: 3000,
+      location: 'top'
     },
-    VTab: {
-      VIcon: {
-        size: 32
-      }
+    VSnackbar: {
+      rounded: 0,
+      timeout: 4000
     },
-    VAutocomplete: {
-      VLabel: {
-        class: 'text-uppercase'
-      },
+    VList: {
+      class: 'pa-0',
+      style: 'user-select: none;',
+      slim: true,
+      rounded: 0,
+      activatable: true,
+      VIcon: { size: 32 }
+    },
+    VListGroup: {
+      VIcon: { size: 24 }
+    },
+    VTextField: {
       VIcon: {
         size: 24
       },
+      VLabel: {
+        class: 'text-uppercase'
+      },
       variant: 'underlined',
+      clearIcon: 'mdi-close',
       active: true
     },
-    VCombobox: {
+    VTextarea: {
+      VIcon: {
+        size: 24
+      },
+      VLabel: {
+        class: 'text-uppercase'
+      },
+      variant: 'underlined',
+      clearIcon: 'mdi-close',
+      active: true
+    },
+    VNumberInput: {
+      VBtn: {
+        width: 16,
+        VIcon: {
+          size: 12
+        }
+      }
+    },
+    VFileInput: {
       VLabel: {
         class: 'text-uppercase'
       },
@@ -72,79 +211,44 @@ const slonBlueprint = {
         }
       },
       variant: 'underlined',
-      active: true
+      clearIcon: 'mdi-close',
+      active: true,
+      VMenu: {
+        VList: {
+          VIcon: { size: 24 }
+        }
+      }
     },
-    VTextarea: {
-      VIcon: {
-        size: 24
-      },
+    VCombobox: {
       VLabel: {
         class: 'text-uppercase'
+      },
+      VIcon: {
+        size: 24
       },
       variant: 'underlined',
       clearIcon: 'mdi-close',
-      active: true
+      active: true,
+      VMenu: {
+        VList: {
+          VIcon: { size: 24 }
+        }
+      }
     },
-    VTextField: {
-      VIcon: {
-        size: 24
-      },
+    VAutocomplete: {
       VLabel: {
         class: 'text-uppercase'
+      },
+      VIcon: {
+        size: 24
       },
       variant: 'underlined',
       clearIcon: 'mdi-close',
-      active: true
-    },
-    VFileInput: {
-      VLabel: {
-        class: 'text-uppercase'
-      },
-      VIcon: {
-        size: 24
-      },
-      variant: 'underlined',
-      active: true
-    },
-    VList: {
-      class: 'pa-0',
-      rounded: 0
-    },
-    VToolbar: {
-      VBtn: {
-        color: null
-      }
-    },
-    VTooltip: {
-      'open-delay': 3000
-    },
-    VBtnIcon: {
-      icon: 'icon',
-      rounded: 0,
-      VIcon: {
-        size: 48
-      }
-    },
-    VChip: {
-      class: 'text-lowercase ma-1',
-      closeIcon: 'mdi-close',
-      label: true,
-      rounded: 0
-    },
-    VRating: {
-      activeColor: 'secondary',
-      color: 'grey-darken-1',
-      density: 'comfortable',
-      VIcon: {
-        class: ''
-      }
-    },
-    VCheckbox: {
-      color: 'success',
-      density: 'comfortable',
-      hideDetails: true,
-      VIcon: {
-        class: ''
+      active: true,
+      VMenu: {
+        VList: {
+          VIcon: { size: 24 }
+        }
       }
     },
     VSwitch: {
@@ -152,27 +256,26 @@ const slonBlueprint = {
       density: 'comfortable',
       hideDetails: true
     },
+    VCheckbox: {
+      color: 'success',
+      density: 'comfortable',
+      hideDetails: true,
+      VIcon: {
+        size: 24
+      }
+    },
     VRadio: {
       color: 'success',
       density: 'comfortable',
       hideDetails: true,
       VIcon: {
-        class: ''
+        size: 24
       }
     },
     VRadioGroup: {
       color: 'success',
       density: 'comfortable',
       hideDetails: true
-    },
-    VSnackbar: {
-      rounded: 0,
-      timeout: 4000
-    },
-    VFab: {
-      color: 'primary',
-      size: 'large',
-      appear: true
     }
   }
 }
