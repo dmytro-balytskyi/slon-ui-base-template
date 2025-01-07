@@ -17,6 +17,9 @@ importers:
       '@mdi/font':
         specifier: ^7.4.47
         version: 7.4.47
+      '@vueuse/core':
+        specifier: ^12.3.0
+        version: 12.3.0(typescript@5.4.5)
       pinia:
         specifier: ^2.3.0
         version: 2.3.0(typescript@5.4.5)(vue@3.5.13(typescript@5.4.5))
@@ -891,6 +894,9 @@ packages:
   '@types/uuid@9.0.8':
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
 
+  '@types/web-bluetooth@0.0.20':
+    resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
+
   '@vitejs/plugin-vue@5.2.1':
     resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -1015,6 +1021,15 @@ packages:
     peerDependencies:
       vue: ^3.0.0
       vuetify: ^3.0.0
+
+  '@vueuse/core@12.3.0':
+    resolution: {integrity: sha512-cnV8QDKZrsyKC7tWjPbeEUz2cD9sa9faxF2YkR8QqNwfofgbOhmfIgvSYmkp+ttSvfOw4E6hLcQx15mRPr0yBA==}
+
+  '@vueuse/metadata@12.3.0':
+    resolution: {integrity: sha512-M/iQHHjMffOv2npsw2ihlUx1CTiBwPEgb7DzByLq7zpg1+Ke8r7s9p5ybUWc5OIeGewtpY4Xy0R2cKqFqM8hFg==}
+
+  '@vueuse/shared@12.3.0':
+    resolution: {integrity: sha512-X3YD35GUeW0d5Gajcwv9jdLAJTV2Jdb/Ll6Ii2JIYcKLYZqv5wxyLeKtiQkqWmHg3v0J0ZWjDUMVOw2E7RCXfA==}
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -3281,6 +3296,8 @@ snapshots:
 
   '@types/uuid@9.0.8': {}
 
+  '@types/web-bluetooth@0.0.20': {}
+
   '@vitejs/plugin-vue@5.2.1(vite@5.4.11(@types/node@22.5.4)(sass-embedded@1.83.1)(sass@1.78.0)(terser@5.31.0))(vue@3.5.13(typescript@5.4.5))':
     dependencies:
       vite: 5.4.11(@types/node@22.5.4)(sass-embedded@1.83.1)(sass@1.78.0)(terser@5.31.0)
@@ -3487,6 +3504,23 @@ snapshots:
       upath: 2.0.1
       vue: 3.5.13(typescript@5.4.5)
       vuetify: 3.7.6(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))
+
+  '@vueuse/core@12.3.0(typescript@5.4.5)':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 12.3.0
+      '@vueuse/shared': 12.3.0(typescript@5.4.5)
+      vue: 3.5.13(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
+
+  '@vueuse/metadata@12.3.0': {}
+
+  '@vueuse/shared@12.3.0(typescript@5.4.5)':
+    dependencies:
+      vue: 3.5.13(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
 
   abbrev@2.0.0: {}
 
