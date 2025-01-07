@@ -1,5 +1,6 @@
 <script setup>
 import { useTheme } from 'vuetify'
+import SlonLogo from './components/SlonLogo.vue'
 
 const theme = useTheme()
 function toggleTheme() {
@@ -10,13 +11,17 @@ function toggleTheme() {
 <template>
   <v-app>
     <v-app-bar name="app-bar" app>
-      <v-app-bar-title>Demo App</v-app-bar-title>
+      <template #prepend>
+        <slon-logo />
+      </template>
 
       <!-- Teleport zone "slon-menu-toolbar" -->
       <div id="slon-menu-toolbar"></div>
-      
-      <template v-slot:append>
-        <v-btn-icon class="mr-2" icon="mdi-theme-light-dark" flat @click="toggleTheme" />
+
+      <template #append>
+        <v-avatar class="mx-4" color="grey-darken-1" size="32" @click="toggleTheme">
+          <v-img src="https://randomuser.me/api/portraits/men/81.jpg"></v-img>
+        </v-avatar>
       </template>
     </v-app-bar>
     <v-main>
