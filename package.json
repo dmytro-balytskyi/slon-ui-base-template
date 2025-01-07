@@ -1,6 +1,6 @@
 {
   "name": "slon-ui-base-template",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "Dmytro Balytskyi <dmytro.balytskyi@gmail.com>",
   "type": "module",
   "private": true,
