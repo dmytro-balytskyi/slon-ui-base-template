@@ -274,3 +274,11 @@
 .max-width-100 {
   max-width: 100% !important;
 }
+
+.v-toolbar.custom-toolbar {
+  background: #fff;
+}
+
+.v-theme--dark.v-toolbar.custom-toolbar {
+  background: #000;
+}
