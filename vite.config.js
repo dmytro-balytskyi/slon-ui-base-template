@@ -19,7 +19,7 @@ export default defineConfig({
         labs: true
       },
       styles: {
-        configFile: 'src/styles/vuetify/settings.scss'
+        configFile: 'node_modules/@slonbeton/slon-ui-blueprint-styles/src/styles/settings.scss'
       }
     }),
     !process.env.STORYBOOKBUILD &&
