@@ -37,8 +37,8 @@ importers:
         specifier: ^1.3.9
         version: 1.3.9
       '@slonbeton/slon-ui-blueprint-styles':
-        specifier: ^0.0.2
-        version: 0.0.2(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))
+        specifier: ^0.0.4
+        version: 0.0.4(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))
       '@storybook/addon-essentials':
         specifier: ^8.5.1
         version: 8.5.1(@types/react@18.3.5)(storybook@8.5.1(prettier@3.4.2))
@@ -612,8 +612,8 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.2':
-    resolution: {integrity: sha512-osW5lKCmtsLg6VfTVuK2f5rjz7Lql+nOahwfSkAiLQreDq//wu5gkzp98FDxxh/xnbM3K94lDlGRasW7T4hh+Q==}
+  '@slonbeton/slon-ui-blueprint-styles@0.0.4':
+    resolution: {integrity: sha512-sd8130qRuPLnjFWC500BdxdegAikddB8PNaJ1uQAbnvvZw45SMOAlx7Nd9kHyjBcolR23vJH1V2FAFB4Y+HxKQ==}
 
   '@storybook/addon-actions@8.5.1':
     resolution: {integrity: sha512-oBBSpOJ6/rCdbdU1JxGCLernaCxALLWDIeZk6tLoQbtbsx/czD1sodqjcujjKwbQwNyZTf8xR8zsCSzG06dWDw==}
@@ -2989,7 +2989,7 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.2(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))':
+  '@slonbeton/slon-ui-blueprint-styles@0.0.4(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))':
     dependencies:
       vuetify: 3.8.1(typescript@5.4.5)(vite-plugin-vuetify@2.0.4)(vue@3.5.13(typescript@5.4.5))
     transitivePeerDependencies:
