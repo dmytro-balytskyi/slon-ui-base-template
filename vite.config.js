@@ -5,7 +5,7 @@ import federation from '@originjs/vite-plugin-federation'
 import topLevelAwait from 'vite-plugin-top-level-await'
 
 // Utilities
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
@@ -49,9 +49,12 @@ export default defineConfig(({ mode }) => {
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'modern-compiler'
+          api: 'modern-compiler',
+        },
+        sass: {
+          api: 'modern-compiler',
         }
-      }
+      },
     },
     build: {
       modulePreload: false,
