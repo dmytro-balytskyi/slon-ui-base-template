@@ -25,20 +25,14 @@ export default defineConfig(({ mode }) => {
           configFile: 'node_modules/@slonbeton/slon-ui-blueprint-styles/src/styles/settings.scss'
         }
       }),
-      !process.env.VITEST &&
-        federation({
-          name: 'host-app',
-          remotes: {
-            shared: env.VITE_REMOTE_SHARED,
-            'concrete-orders': env.VITE_REMOTE_PAGE_CONCRETE_ORDERS
-          },
-          shared: ['vue', 'vuetify', '@apollo/client', '@vue/apollo-composable']
-        }),
-      !process.env.STORYBOOKBUILD &&
+      !(process.env.VITEST || process.env.STORYBOOKBUILD) &&
         federation({
           name: 'someshared',
-          filename: 're.js'
-          //shared: ['vue', 'vuetify']
+          filename: 're.js',
+          remotes: {
+            shared: env.VITE_REMOTE_SHARED
+          },
+          shared: ['vue', 'vuetify', '@vueuse/core']
         }),
       !process.env.STORYBOOKBUILD &&
         topLevelAwait({

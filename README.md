@@ -1,6 +1,10 @@
 # slon-base-page
 
-Цей шаблон ми використовуємо як базовий для побудови проектів
+Цей шаблон ми використовуємо як базовий для побудови проектів<br>
+Потрібно створити .env файл і додати наступні строки
+```.env
+VITE_REMOTE_SHARED=http://dev.taxi-beton.ua/shared/components/assets/re.js
+```
 
 ## Recommended IDE Setup
 
