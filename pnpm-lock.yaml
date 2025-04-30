@@ -37,8 +37,8 @@ importers:
         specifier: ^1.4.1
         version: 1.4.1
       '@slonbeton/slon-ui-blueprint-styles':
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^0.0.19
+        version: 0.0.19
       '@storybook/addon-essentials':
         specifier: ^8.6.12
         version: 8.6.12(@types/react@18.3.5)(storybook@8.6.12(prettier@3.5.3))
@@ -697,8 +697,8 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.14':
-    resolution: {integrity: sha512-WEVsQD5RT0YBjs3mjDIyCMgMfZokAPkGj61adgf6ePOLlnH/C5YxCyDcZMiRafIKQNHj3xk/DWMS/fhlOar4Yw==}
+  '@slonbeton/slon-ui-blueprint-styles@0.0.19':
+    resolution: {integrity: sha512-kSC9pD8K1Dw7CClbIqoO0e9FVjTrCTXuu3ebZLpnXgT6Hpz8hW9kniQBvTsfv96NelFXcV9bW6HGngcKPMohXQ==}
 
   '@storybook/addon-actions@8.6.12':
     resolution: {integrity: sha512-B5kfiRvi35oJ0NIo53CGH66H471A3XTzrfaa6SxXEJsgxxSeKScG5YeXcCvLiZfvANRQ7QDsmzPUgg0o3hdMXw==}
@@ -1620,6 +1620,9 @@ packages:
 
   immutable@5.0.3:
     resolution: {integrity: sha512-P8IdPQHq3lA1xVeBRi5VPqUm5HDgKnx0Ru51wZz5mjxHr5n3RWhjIpOFU7ybkUxfB+5IToy+OLaHYDBIWsv+uw==}
+
+  immutable@5.1.1:
+    resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
 
   indent-string@4.0.0:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
@@ -2587,8 +2590,8 @@ packages:
   vue-component-type-helpers@2.0.19:
     resolution: {integrity: sha512-cN3f1aTxxKo4lzNeQAkVopswuImUrb5Iurll9Gaw5cqpnbTAxtEMM1mgi6ou4X79OCyqYv1U1mzBHJkzmiK82w==}
 
-  vue-component-type-helpers@2.2.8:
-    resolution: {integrity: sha512-4bjIsC284coDO9om4HPA62M7wfsTvcmZyzdfR0aUlFXqq4tXxM1APyXpNVxPC8QazKw9OhmZNHBVDA6ODaZsrA==}
+  vue-component-type-helpers@2.2.10:
+    resolution: {integrity: sha512-iDUO7uQK+Sab2tYuiP9D1oLujCWlhHELHMgV/cB13cuGbG4qwkLHvtfWb6FzvxrIOPDnU0oHsz2MlQjhYDeaHA==}
 
   vue-demi@0.14.10:
     resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
@@ -3121,7 +3124,7 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.14': {}
+  '@slonbeton/slon-ui-blueprint-styles@0.0.19': {}
 
   '@storybook/addon-actions@8.6.12(storybook@8.6.12(prettier@3.5.3))':
     dependencies:
@@ -3347,7 +3350,7 @@ snapshots:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.5.13(typescript@5.8.3)
-      vue-component-type-helpers: 2.2.8
+      vue-component-type-helpers: 2.2.10
 
   '@swc/core-darwin-arm64@1.6.0':
     optional: true
@@ -4186,6 +4189,9 @@ snapshots:
 
   immutable@5.0.3: {}
 
+  immutable@5.1.1:
+    optional: true
+
   indent-string@4.0.0: {}
 
   inherits@2.0.4: {}
@@ -4768,7 +4774,7 @@ snapshots:
   sass@1.86.3:
     dependencies:
       chokidar: 4.0.3
-      immutable: 5.0.3
+      immutable: 5.1.1
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
@@ -5109,7 +5115,7 @@ snapshots:
 
   vue-component-type-helpers@2.0.19: {}
 
-  vue-component-type-helpers@2.2.8: {}
+  vue-component-type-helpers@2.2.10: {}
 
   vue-demi@0.14.10(vue@3.5.13(typescript@5.8.3)):
     dependencies:
