@@ -26,6 +26,8 @@ const config = {
     '@storybook/addon-viewport',
     'storybook-addon-vue-mdx',
     'storybook-vue-addon',
+    '@storybook/addon-mdx-gfm',
+    '@chromatic-com/storybook'
   ],
   framework: {
     name: '@storybook/vue3-vite',
@@ -36,9 +38,7 @@ const config = {
   core: {
     disableTelemetry: true
   },
-  docs: {
-    autodocs: 'tag'
-  }
+  docs: {}
 }
 
 export default config

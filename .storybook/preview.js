@@ -14,7 +14,6 @@ MINIMAL_VIEWPORTS.responsive = {
 const preview = {
   parameters: {
     backgrounds: { disable: true },
-    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
