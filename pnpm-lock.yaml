@@ -40,8 +40,8 @@ importers:
         specifier: ^1.4.1
         version: 1.4.1
       '@slonbeton/slon-ui-blueprint-styles':
-        specifier: ^0.0.25
-        version: 0.0.25
+        specifier: ^0.0.26
+        version: 0.0.26
       '@storybook/addon-essentials':
         specifier: ^8.6.14
         version: 8.6.14(@types/react@18.3.5)(storybook@8.6.14(prettier@3.6.2))
@@ -779,8 +779,8 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.25':
-    resolution: {integrity: sha512-iiYIkOZ/ApVEJrPiqd+PkN1Qp9mQheCobWu5RwxmVfOmmWnEZGXAapfFjv+knnOOKj3kGqxifBPaSd0Sp8rUpw==}
+  '@slonbeton/slon-ui-blueprint-styles@0.0.26':
+    resolution: {integrity: sha512-2GkMRyoYkBBYBqj4IDsznDCdvtKpxrfjaF2ZuIDYclVMDzxQZPTSlhiRf43eVK6AgUTgBLzOg3NaZ7yjrINZQQ==}
 
   '@storybook/addon-actions@8.6.14':
     resolution: {integrity: sha512-mDQxylxGGCQSK7tJPkD144J8jWh9IU9ziJMHfB84PKpI/V5ZgqMDnpr2bssTrUaGDqU5e1/z8KcRF+Melhs9pQ==}
@@ -3508,7 +3508,7 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@slonbeton/slon-ui-blueprint-styles@0.0.25': {}
+  '@slonbeton/slon-ui-blueprint-styles@0.0.26': {}
 
   '@storybook/addon-actions@8.6.14(storybook@8.6.14(prettier@3.6.2))':
     dependencies:
