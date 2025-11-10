@@ -1,6 +1,6 @@
 import { withVuetify } from './withVuetify.js'
 import vuetify from '../src/plugins/vuetify.js'
-import { DEFAULT_VIEWPORT, MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
+import { DEFAULT_VIEWPORT, MINIMAL_VIEWPORTS } from 'storybook/viewport'
 
 MINIMAL_VIEWPORTS.responsive = {
   name: 'Responsive',

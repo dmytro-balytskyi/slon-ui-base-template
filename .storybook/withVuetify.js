@@ -1,4 +1,4 @@
-import { setup } from '@storybook/vue3'
+import { setup } from '@storybook/vue3-vite'
 import { defineComponent, ref, watchEffect } from 'vue'
 import vuetify from '../src/plugins/vuetify.js'
 import { VApp, VMain, VContainer } from 'vuetify/components'

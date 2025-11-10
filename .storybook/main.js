@@ -20,14 +20,11 @@ const config = {
   //   }
   // },
   addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
     '@storybook/addon-links',
-    '@storybook/addon-viewport',
     'storybook-addon-vue-mdx',
     'storybook-vue-addon',
-    '@storybook/addon-mdx-gfm',
-    '@chromatic-com/storybook'
+    '@chromatic-com/storybook',
+    '@storybook/addon-docs'
   ],
   framework: {
     name: '@storybook/vue3-vite',

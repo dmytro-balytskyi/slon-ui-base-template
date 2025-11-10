@@ -25,18 +25,11 @@
     "vuetify": "^3.10.9"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.7",
+    "@chromatic-com/storybook": "^4.1.2",
     "@originjs/vite-plugin-federation": "^1.4.1",
     "@slonbeton/slon-ui-blueprint-styles": "^0.0.26",
-    "@storybook/addon-essentials": "^8.6.14",
-    "@storybook/addon-interactions": "^8.6.14",
-    "@storybook/addon-links": "^8.6.14",
-    "@storybook/addon-mdx-gfm": "8.6.14",
-    "@storybook/addon-viewport": "^8.6.14",
-    "@storybook/blocks": "^8.6.14",
-    "@storybook/test": "^8.6.14",
-    "@storybook/vue3": "^8.6.14",
-    "@storybook/vue3-vite": "^8.6.14",
+    "@storybook/addon-links": "^10.0.6",
+    "@storybook/vue3-vite": "^10.0.6",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/test-utils": "^2.4.6",
     "concurrently": "^8.2.2",
@@ -45,13 +38,14 @@
     "prettier": "^3.6.2",
     "resize-observer-polyfill": "^1.5.1",
     "sass-embedded": "^1.93.3",
-    "storybook": "^8.6.14",
+    "storybook": "^10.0.6",
     "storybook-addon-vue-mdx": "^1.0.6",
     "storybook-vue-addon": "^0.6.3",
     "vite": "^6.4.1",
     "vite-plugin-top-level-await": "^1.6.0",
     "vite-plugin-vuetify": "^2.1.2",
-    "vitest": "^1.6.1"
+    "vitest": "^1.6.1",
+    "@storybook/addon-docs": "^10.0.6"
   },
   "pnpm": {
     "overrides": {
