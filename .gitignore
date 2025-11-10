@@ -38,3 +38,4 @@ firebase*
 
 # Env
 .env*
+*_values.yml
