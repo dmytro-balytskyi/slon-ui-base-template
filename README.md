@@ -1,4 +1,4 @@
-# slon-ui-leads
+# slon-base-template
 
 Потрібно створити .env файл і додати наступні строки
 ```.env
